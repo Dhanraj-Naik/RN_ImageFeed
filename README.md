@@ -18,7 +18,7 @@
  + **ColorPropeType** is imported from react-native since colors in *react native* are strings, for validating contents of a value rather then just premitive types.
  + **PropTypes** package contains validators for premetive JavaScript types like numbers and strings.
    - *PropeTypes.shape()* to validate an object, passing keys of values we want to validate.
-     - *PropeTypes.array()* to validate an array, padding the type of the element.
+  - *PropeTypes.array()* to validate an array, padding the type of the element.
  ```javascript
  static propTypes = {
     items: PropTypes.arrayOf( 
