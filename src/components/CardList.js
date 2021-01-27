@@ -7,6 +7,7 @@ import Card from './Card';
 
 const keyExtractor = ({ id }) => id.toString();
 
+const TAG = 'CardList.js';
 class CardList extends Component {
     static propTypes = {
         commentsForItem: PropTypes.objectOf(
