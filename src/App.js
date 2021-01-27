@@ -1,5 +1,6 @@
 import React from 'react';
-import { AsyncStorage, Modal, Platform, StyleSheet, View } from 'react-native';
+import { Modal, Platform, StyleSheet, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from './utils/Constants';
 import Feed from './screens/Feed';
 import Comments from './screens/Comments';
@@ -69,16 +70,6 @@ class App extends React.Component {
 
   render() {
     const { commentsForItem, selectedItemId, showModal } = this.state;
-    const items = [
-      {
-        id: 0,
-        author: 'Bob Ross',
-      },
-      {
-        id: 1,
-        author: 'Chuck Norris',
-      },
-    ];
 
     console.log(TAG, 'render commentsForItem:', commentsForItem);
 
